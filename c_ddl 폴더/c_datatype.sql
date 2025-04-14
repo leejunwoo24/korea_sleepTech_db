@@ -63,6 +63,7 @@ create table person(
 insert into person
 value (128, 32768);
 
+SELECT * from person;
 /*
 	2. 문자형 
     : 텍스트 데이터 저장
@@ -114,6 +115,8 @@ create table `character` (
 insert into `character`
 values('Laptop', '전자제품', '삼성 갤럭시 북4 노트북 프로', 'example.com');
 
+SELECT * FROM `character`;
+
 /*
 	3. 실수형
     : 소수점이 있는 숫자를 저장할 때 사용
@@ -140,9 +143,9 @@ create table products (
 ); 
 
 insert into products
-values (12345.67, 123456.7890, 99999999999999.99); 
+values (12345.67, 123456.7890, 9999999999999.99); 
 
-
+SELECT * FROM `products`;
 /*
 	4. 논리형
     : boolean 값을 저장하기 위한 데이터 타입
